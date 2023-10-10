@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.2s linear;
+    list-style: none;
+}
+
+:root{
+    --green: #05d405;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7.5rem; 
+}
+
+.uni-padding{
+    padding: 0 4%;
+}
+
+body{
+    font-size: 2rem;
+}
+
+.navbar{
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .navlist{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 1.7rem 0;
+}
+
+.navbar .navlist .logo{
+    width: 30%;
+}
+
+.navbar .navlist li{
+    list-style: none;
+    padding: 0px 37px;
+}
+
+.navbar .navlist li a{
+    padding: 5px 8px;
+    border-radius: .5rem;
+    color: black;
+}
+
+.navbar .navlist li a:hover{
+    background-color: var(--green);
+    color: white;
+}
+
+.navbar .hire-me{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar .hire-me a{
+    background-color: var(--green);
+    border-radius: .5rem;
+    border: .2rem solid var(--green);
+    color: white;
+    padding: 5px 8px;
+}
+
+.navbar .hire-me a:hover{
+    background-color: white;
+    color: var(--green);
+}
+
+
+/*Home section*/
+
+
+#home{
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    height: 70rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .combo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+}
+
+#home::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("Images/Background.jpg");
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#home h1{
+    font-size: 4rem;
+}
+
+#home p{
+    margin: 2rem 0;
+}
+
+#home #position{
+    color: var(--green);
+}
+
+#home .aboutmebutton a{
+    color: white;
+    background-color: var(--green);
+    padding: .3rem .7rem;
+    border: .2rem solid var(--green);
+    border-radius: .5rem;
+}
+
+#home .aboutmebutton a:hover{
+    background-color: white;
+    color: var(--green);
+}
+
+
+/*About Me*/
+
+#aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.8rem;
+    margin-bottom: 6rem;
+}
+
+#aboutme .myimage{
+    width: 40%;
+}
+
+#aboutme .myimage img{
+    width: 60%;
+    border: .5rem solid white;
+    box-shadow: 3.8rem 3.8rem 0 0.7rem var(--green);
+}
+
+#aboutme .myinfo{
+    width: 60%;
+    padding: 1.5rem;
+}
+
+#aboutme .myinfo h1{
+    margin-bottom: 3rem;
+    color: var(--green);
+    font-size: 5rem;
+}
+
+#aboutme .myinfo h3{
+    margin-bottom: 3rem;
+}
+
+#aboutme .myinfo p{
+    margin-bottom: 3rem;
+}
+
+#aboutme .myinfo img{
+    width: 5%;
+}
+
+
+/*Education section*/
+
+#education{
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    background-color: rgb(243, 241, 241);
+    padding-bottom: 4rem;
+}
+
+#education .combo2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+#education h1{
+    padding: 2rem 0;
+    font-size: 5rem;
+    color: var(--green);
+    text-align: center;
+}
+
+#education .combo2 .coomonforeducation{
+    border: .5rem solid var(--green);
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+#education .combo2 .coomonforeducation:hover{
+    background-color: var(--green);
+    color: white;
+}
+
+#education .combo2 .coomonforeducation h1{
+    color: var(--green);
+    font-size: 3rem;
+    background-color: white;
+    width: fit-content;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#education .combo2 .coomonforeducation h4{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/*Skills Section*/
+
+#skills{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#skillsheading{
+    padding: 2rem 0;
+    font-size: 5rem;
+    color: var(--green);
+    text-align: center;
+}
+
+#skills .combo3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+#skills .combo3 .skillblock{
+    border: .5rem solid var(--green);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#skills .combo3 .skillblock:hover{
+    background-color: var(--green);
+    color: white;
+}
+
+#skills .combo3 .skillblock img{
+    width: 30%;
+}
+
+#skills .combo3 .skillblock p{
+    padding: 0 2rem;
+}
+
+
+/*Project Section*/
+
+#project{
+    margin-top: 3rem;
+    padding-bottom: 4rem;
+    background-color: rgb(243, 241, 241);
+}
+
+#project #projectheading{
+    padding: 2rem 0;
+    font-size: 5rem;
+    color: var(--green);
+    text-align: center;
+}
+
+#project .combo4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+#project .combo4 .projectblock{
+    border: .5rem solid var(--green);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+#project .combo4 .projectblock:hover .content{
+    bottom: 0;
+}
+
+#project .combo4 .projectblock img{
+    width: 85%;
+}
+
+#project .combo4 .projectblock .content{
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+#project .combo4 .projectblock .content h1{
+    margin-bottom: 2rem;
+}
+
+#project .combo4 .projectblock .content p{
+    margin-bottom: 1.5rem;
+}
+
+#project .combo4 .projectblock .content a{
+    padding: .7rem;
+    background-color: var(--green);
+    color: white;
+    border: .3rem solid var(--green);
+    border-radius: .5rem;
+}
+
+#project .combo4 .projectblock .content a:hover{
+    background-color: white;
+    color: var(--green);
+}
+
+/*Footer section*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border: 5px solid var(--green);
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+footer ul li a{
+    color: black;
+    padding: 5px 8px;
+    border-radius: .7rem;
+}
+
+footer ul li a:hover{
+    background-color: var(--green);
+    color: white;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+footer div a{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer div a img{
+    width: 40%;
+}
+
+footer h4{
+    color: var(--green);
+}
